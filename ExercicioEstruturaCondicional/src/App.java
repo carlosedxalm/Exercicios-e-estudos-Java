@@ -16,11 +16,11 @@ public class App {
         nota1 = sc.nextDouble();
         System.err.println("Nota 2: ");
         nota2 = sc.nextDouble();
-        double notaFunal = nota1 + nota2;
+        double notaFinal = nota1 + nota2;
         System.err.println("Nota final: " + notaFunal);
 
         // Verifica se a nota final é menor que 60.0 para determinar se o aluno está aprovado ou reprovado
-        if (notaFunal < 60.0) {
+        if (notaFinal < 60.0) {
             System.err.println("Reprovado");
         } else {
             System.err.println("Aprovado");
