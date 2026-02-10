@@ -41,5 +41,35 @@ public class App {
         }
         sc.close();
         */
+        /* 
+        // Solicita ao usuário que digite um número para verificar se é par ou ímpar
+        System.err.println("Digite um numero para saber se é par ou impar: ");
+        Scanner sc = new Scanner(System.in);
+        int numero = sc.nextInt();
+        // Verifica se o número é par ou ímpar usando o operador módulo resto da divisão
+        if (numero % 2 == 0) {
+            System.err.println("PAR");
+        } else {
+            System.err.println("IMPAR");
+        }
+        sc.close();
+        */
+
+        System.err.println("Digite o salario: ");
+        Scanner sc = new Scanner(System.in);
+        double salario = sc.nextDouble();
+        if (salario <= 2000.0) {
+            System.err.println("Isento");
+        } else if (salario <= 3000.0) {
+            double imposto = (salario - 2000.0) * 0.08;
+            System.err.printf("R$ %.2f%n", imposto);
+        } else if (salario <= 4500.0) {
+            double imposto = (1000.0 * 0.08) + ((salario - 3000.0) * 0.18);
+            System.err.printf("R$ %.2f%n", imposto);
+        } else {
+            double imposto = (1000.0 * 0.08) + (1500.0 * 0.18) + ((salario - 4500.0) * 0.28);
+            System.err.printf("R$ %.2f%n", imposto);
+        }
+        sc.close();
     }
 }
