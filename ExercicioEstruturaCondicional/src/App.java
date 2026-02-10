@@ -4,6 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         // Configura o locale para garantir que o ponto seja usado como separador decimal
         Locale.setDefault(new Locale("en", "US"));
+        /* 
         // Cria um Scanner para ler a entrada do usuário
         Scanner sc = new Scanner(System.in);
 
@@ -27,5 +28,18 @@ public class App {
             
         }
         sc.close();
+        */
+       /* 
+        // Solicita ao usuário que digite um número inteiro, que pode ser positivo ou negativo
+        System.err.println("Digite um numero inteiro, podendo ser positivo ou negativo: ");
+        Scanner sc = new Scanner(System.in);
+        int numero = sc.nextInt();
+        if (numero < 0) {
+            System.err.println("NEGATIVO");
+        } else {
+            System.err.println("POSITIVO");
+        }
+        sc.close();
+        */
     }
 }
