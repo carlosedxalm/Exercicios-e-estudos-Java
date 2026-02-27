@@ -29,6 +29,19 @@ public class App {
     }
         */
 
+    // Exercicio de estrutura de repetição - for, URI 1143.
+    Scanner sc = new Scanner(System.in);
+
+    int N = sc.nextInt();
+
+    for (int i=1; i<=N; i++) {
+        int primeiro = i;
+        int segundo = i * i;
+        int terceiro = i * i * i;
+        System.out.println(primeiro + " " + segundo + " " + terceiro);
+    }
+    sc.close();
     
+}
 }
 
