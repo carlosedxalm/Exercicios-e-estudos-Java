@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
@@ -30,7 +31,9 @@ public class App {
         */
 
     // Exercicio de estrutura de repetição - for, URI 1143.
-    Scanner sc = new Scanner(System.in);
+    
+
+   /*  Scanner sc = new Scanner(System.in);
 
     int N = sc.nextInt();
 
@@ -42,6 +45,26 @@ public class App {
     }
     sc.close();
     
+    }   
+    */
+
+    //estrutura de repetição - do while.
+
+    Locale.setDefault(Locale.US);
+    Scanner sc = new Scanner(System.in);
+
+    char resposta;
+    do {
+        System.out.println("Digite a temperatura em Celsius: ");
+        double C = sc.nextInt();
+        double F = 9.0 * C / 5.0 + 32.0;
+        System.out.printf("Equivalente em Fahrenheit: %.1f%n", F);
+        
+        System.out.println("Deseja repetir? (s/n)");
+        resposta = sc.next().charAt(0);
+    } while (resposta != 'n');
+    sc.close();
 }
+
 }
 
